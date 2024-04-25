@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { protect } from "../../middleware/authMiddleware.js";
+import { protect } from "../middleware/authmiddleware.js";
 import {
   registerUser,
   authUser,
   allUsers,
-} from "../controllers/userControllers";
+} from "../controllers/userControllers.js";
 
 const router = Router();
 

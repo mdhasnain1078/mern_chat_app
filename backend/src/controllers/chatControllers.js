@@ -1,6 +1,6 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
-import Chat from "../models/chatModel.js";
-import User from "../models/userModel.js";
+import { Chat } from "../models/chatModel.js";
+import { User } from "../models/userModel.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { ApiError } from "../utils/apiError.js";
 

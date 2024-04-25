@@ -1,5 +1,5 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
-import User from "../models/userModel.js";
+import { User } from "../models/userModel.js";
 import generateToken from "../config/generateToken.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { ApiError } from "../utils/apiError.js";

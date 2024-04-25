@@ -6,8 +6,8 @@ import {
   removeFromGroup,
   addToGroup,
   renameGroup,
-} from "../controllers/chatControllers";
-import { protect } from "../../middleware/authMiddleware.js";
+} from "../controllers/chatControllers.js";
+import { protect } from "../middleware/authmiddleware.js";
 
 const router = Router();
 

@@ -77,10 +77,7 @@ const SideDrawer = () => {
         },
       };
 
-      const { data } = await axios.get(
-        `http://localhost:5000/api/v1/user?search=${search}`,
-        config
-      );
+      const { data } = await axios.get(`/api/v1/user?search=${search}`, config);
 
       setLoading(false);
       setSearchResult(data.data);
@@ -107,11 +104,7 @@ const SideDrawer = () => {
           Authorization: `Bearer ${user.data.token}`,
         },
       };
-      const { data } = await axios.post(
-        `http://localhost:5000/api/v1/chat`,
-        { userId },
-        config
-      );
+      const { data } = await axios.post(`/api/v1/chat`, { userId }, config);
       if (!chats.find((c) => c._id === data.data._id))
         setChats([data.data, ...chats]);
       setSelectedChat(data.data);

@@ -37,7 +37,7 @@ const HomePage = () => {
           borderWidth={"1px"}
         >
           <Text fontSize={"4xl"} fontFamily={"Work sans"}>
-            Talk-A-Tive
+            Ao-Baat-kare
           </Text>
         </Box>
         <Box

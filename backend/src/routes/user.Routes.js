@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { protect } from "../middleware/authmiddleware.js";
+import protect from "../middleware/authmiddleware.js";
 import {
   registerUser,
   authUser,

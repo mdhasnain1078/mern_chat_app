@@ -41,13 +41,13 @@ connectDB()
 
         if (!chat.users) return console.log("chat.users not defined");
 
-        socket.to(room).emit("message recieved", newMessageRecieved);
+        // socket.to(room).emit("message recieved", newMessageRecieved);
 
-        // chat.users.forEach((user) => {
-        //   if (user._id == newMessageRecieved.sender._id) return;
+        chat.users.forEach((user) => {
+          if (user._id == newMessageRecieved.sender._id) return;
 
-        //   socket.in(user._id).emit("message recieved", newMessageRecieved);
-        // });
+          socket.in(user._id).emit("message recieved", newMessageRecieved);
+        });
       });
 
       socket.on("typing", (room) => socket.in(room).emit("typing"));

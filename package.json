@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./backend/src/index.js -es-module-specifier-resolution=node",
+    "start": "node ./backend/src/index.js",
     "dev": "nodemon -r dotenv/config --experimental-json-modules backend/src/index.js",
     "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },

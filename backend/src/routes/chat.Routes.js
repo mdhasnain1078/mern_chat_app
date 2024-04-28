@@ -7,7 +7,7 @@ import {
   addToGroup,
   renameGroup,
 } from "../controllers/chatControllers.js";
-import { protect } from "../middleware/authmiddleware.js";
+import { protect } from "../middleware/authMiddleware.js";
 
 const router = Router();
 
